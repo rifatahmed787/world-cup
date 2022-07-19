@@ -1,0 +1,137 @@
+/*--------------
+   google fonts 
+----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #FFFFFF;
+}
+
+/*-----------------------------
+          header style
+--------------------------------*/
+header {
+    height: 500px;
+    width: 1100px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #161616;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.container {
+    display: flex;
+}
+
+.description {
+    width: 50%;
+    color: white;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.description p {
+    margin: 30px 0;
+}
+
+.description a {
+    text-decoration: none;
+    border: 2px solid #DD0000;
+    border-radius: 5px;
+    background-color: #DD0000;
+    padding: 7px;
+    color: white;
+    margin-top: 20px;
+}
+
+.fa-greater-than {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.album img {
+    margin-top: 50px;
+    margin-right: 50px;
+    height: 450px;
+    width: 450px;
+}
+
+/*--------------------- 
+     header style end 
+------------------------*/
+/*---------------------- 
+   first section style
+-----------------------*/
+.section-one {
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+.link-item {
+    height: 252px;
+    width: 252px;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    background-color: #161616;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+
+
+}
+
+.link a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.match {
+    border: 1px solid #161616;
+    border-radius: 30px;
+    margin-top: 2px;
+    background-color: white;
+    border-width: 20px;
+    padding: 10px;
+}
+
+.blogs {
+    border: 1px solid #161616;
+    border-radius: 30px;
+    border-width: 20px;
+    padding: 10px;
+    background-color: #DD0000;
+    color: white;
+}
+
+.transfer-title {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 90px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icons img {
+    margin: 0 10px;
+}
+
+/* .icon {
+    margin-left: 5px;
+} */
