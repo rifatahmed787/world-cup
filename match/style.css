@@ -7,6 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
 /*-----------------------------
@@ -86,7 +87,7 @@ header {
 
 .link {
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(1, 1fr);
 
 }
 
@@ -153,6 +154,22 @@ header {
 
 .time {
     font-size: 10px;
+}
+
+/*-----------------------
+    second section style
+ ------------------------ */
+.tab-view {
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+.view-all {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: tomato;
+    border-radius: 5px;
 }
 
 /*------------------------
@@ -234,10 +251,10 @@ header {
 /* animation style */
 
 .container:hover {
-    animation-delay: 3s;
+
     background-color: skyblue;
     border-radius: 30px;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-name: sliding;
     animation-iteration-count: infinite;
 }
@@ -263,4 +280,119 @@ header {
         background-color: cornflowerblue;
     }
 
+}
+
+/*----------------------
+        media query 
+ -------------------------*/
+
+/*--------------------------
+     small device 
+  --------------------*/
+@media only screen and (max-width:688px) {
+    header {
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .section-one {
+        flex-direction: column;
+    }
+
+    .link-item {
+        margin: 0 auto;
+    }
+
+
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    .destination {
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    .footer-title {
+        margin-left: 105px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*----------------------
+ medium device 
+ ---------------------*/
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    header {
+        height: auto;
+        width: 100%;
+    }
+
+    .album img {
+        margin-top: 175px;
+    }
+
+    .section-one {
+        flex-direction: column;
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link-item {
+        margin: 0 auto;
+        background-color: white;
+        border-style: none;
+        padding: 0 20px;
+
+    }
+
+    .link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .link a {
+
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 15px;
+
+    }
+
+    .blogs {
+        padding: 10px 50px;
+    }
+
+}
+
+/*--------------------------
+        large device 
+ --------------------------*/
+@media only screen and (min-width:992px) {
+    .view-all {
+        display: none;
+    }
 }

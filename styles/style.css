@@ -7,7 +7,10 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     background-color: #FFFFFF;
+    margin: 0 auto;
 }
+
+
 
 /*-----------------------------
           header style
@@ -60,7 +63,7 @@ header {
     margin-top: 20px;
     margin-right: 80px;
     height: 430px;
-    width: 420px;
+    width: 75%;
 }
 
 /*--------------------- 
@@ -164,6 +167,21 @@ header {
     margin-left: 15px;
 }
 
+/*-----------------------
+    second section style
+ ------------------------ */
+.tab-view {
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+.view-all {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: tomato;
+    border-radius: 5px;
+}
 
 
 /*------------------------
@@ -175,6 +193,7 @@ header {
     background-color: #161616;
     margin-top: 100px;
     border: 1px solid #161616;
+    margin: 0 auto;
 }
 
 .footer-title {
@@ -274,5 +293,124 @@ header {
 
     100% {
         background-color: cornflowerblue;
+    }
+}
+
+/*-----------------------------
+          media query
+ ---------------------------- */
+/*----------------------
+         small device 
+  ----------------------*/
+@media only screen and (max-width: 688px) {
+    header {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .section-one {
+        flex-direction: column;
+    }
+
+    .link-item {
+        margin: 0 auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    .destination {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .footer-title {
+        margin-left: 105px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*--------------------------
+      medium device 
+ ----------------------------*/
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    header {
+        height: auto;
+        width: 100%;
+    }
+
+    .album img {
+        margin-right: 25px;
+    }
+
+    .section-one {
+        flex-direction: column;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link-item {
+        margin: 0 auto;
+        background-color: white;
+        border-style: none;
+        padding: 0 20px;
+
+    }
+
+    .link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .link a {
+
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 15px;
+
+    }
+
+    .match {
+        padding: 10px 30px;
+    }
+
+    .blogs {
+        padding: 10px 50px;
+    }
+
+}
+
+/*------------------
+   larger device 
+ ------------------*/
+@media only screen and (min-width:992px) {
+
+    .view-all {
+        display: none;
     }
 }
