@@ -13,13 +13,13 @@ body {
           header style
 --------------------------------*/
 header {
-    height: 500px;
-    width: 1100px;
+    height: 450px;
+    width: 1140px;
     border: 1px solid black;
     border-radius: 30px;
     background-color: #161616;
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .container {
@@ -57,10 +57,10 @@ header {
 }
 
 .album img {
-    margin-top: 50px;
-    margin-right: 50px;
-    height: 450px;
-    width: 450px;
+    margin-top: 20px;
+    margin-right: 80px;
+    height: 430px;
+    width: 420px;
 }
 
 /*--------------------- 
@@ -71,21 +71,22 @@ header {
 -----------------------*/
 .section-one {
     margin-top: 70px;
-    margin-left: 120px;
+    margin-left: 100px;
+    display: flex;
 }
 
 .link-item {
     height: 252px;
-    width: 252px;
+    width: 230px;
     border: 1px solid #161616;
     border-radius: 10px;
     background-color: #161616;
+    margin-right: 20px;
 }
 
 .link {
     display: grid;
     grid-template-columns: repeat(1fr);
-
 
 }
 
@@ -113,25 +114,114 @@ header {
     color: white;
 }
 
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.player {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 280px;
+    height: 350px;
+}
+
+.banner img {
+    width: 280px;
+}
+
+.player-info {
+    margin-left: 12px;
+}
+
 .transfer-title {
     border: 1px solid gray;
     border-radius: 5px;
     width: 90px;
     text-align: center;
     font-size: 15px;
+
 }
 
-.icons {
+.details-info {
     display: flex;
-    justify-content: space-between;
+    margin-left: 12px;
+
     align-items: center;
+    /* margin-bottom: 50px; */
 
 }
 
-.icons img {
-    margin: 0 10px;
+
+.icon img {
+    margin-left: 30px;
+    margin-top: 0px;
 }
 
-/* .icon {
-    margin-left: 5px;
-} */
+.number {
+    margin-left: 15px;
+}
+
+
+
+/*------------------------
+    footer style start 
+------------------------*/
+.destination {
+    height: 300px;
+    width: 100%;
+    background-color: #161616;
+    margin-top: 100px;
+    border: 1px solid #161616;
+}
+
+.footer-title {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: 80px 70px 40px 70px;
+    border-bottom: 1px solid gray;
+    border-width: thin;
+
+
+}
+
+.menu {
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    list-style: none;
+
+}
+
+.menu ul li a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    font-size: 10px;
+    padding: 15px;
+
+}
+
+.icons ul {
+    display: flex;
+    justify-content: center;
+}
+
+.icons ul li {
+    list-style: none;
+}
+
+.fa-brands {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0 15px;
+}
