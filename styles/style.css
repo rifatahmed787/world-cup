@@ -226,6 +226,53 @@ header {
     padding: 0 15px;
 }
 
+.fa-facebook {
+    color: #097DEB;
+}
+
+.fa-instagram {
+    color: #8B389D;
+}
+
+.fa-linkedin {
+    color: #007AB5;
+}
+
 /*-----------------
  footer style end
  ----------------- */
+
+/*--------------
+  animation style 
+  ---------------*/
+
+.container:hover {
+
+    background-color: skyblue;
+    border-radius: 30px;
+    animation-duration: 3s;
+    animation-name: sliding;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sliding {
+    0% {
+        background-color: skyblue;
+    }
+
+    25% {
+        background-color: blueviolet;
+    }
+
+    50% {
+        background-color: yellowgreen;
+    }
+
+    75% {
+        background-color: goldenrod;
+    }
+
+    100% {
+        background-color: cornflowerblue;
+    }
+}
