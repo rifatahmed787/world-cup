@@ -16,13 +16,15 @@ body {
           header style
 --------------------------------*/
 header {
-    height: 450px;
-    width: 1140px;
+    /* height: 450px; */
+    height: auto;
+    /* width: 1140px; */
+    width: 100%;
     border: 1px solid black;
     border-radius: 30px;
     background-color: #161616;
-    margin-top: 30px;
-    margin-left: 100px;
+    /* margin-top: 30px;
+    margin-left: 100px; */
 }
 
 .container {
@@ -32,7 +34,7 @@ header {
 .description {
     width: 50%;
     color: white;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     padding: 50px;
 }
 
@@ -41,7 +43,7 @@ header {
 }
 
 .description p {
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .description a {
@@ -51,19 +53,21 @@ header {
     background-color: #DD0000;
     padding: 7px;
     color: white;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .fa-greater-than {
     font-size: 13px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 .album img {
-    margin-top: 20px;
-    margin-right: 80px;
-    height: 430px;
-    width: 420px;
+    /* margin-top: 20px;
+    margin-right: 80px; */
+    /* height: 430px; */
+    height: auto;
+    /* width: 420px; */
+    width: 100%;
 }
 
 /*--------------------- 
@@ -358,7 +362,8 @@ header {
     }
 
     .album img {
-        margin-right: 25px;
+        height: auto;
+        margin-top: 300px;
     }
 
     .section-one {
